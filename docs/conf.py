@@ -115,6 +115,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
+latex_engine = 'xelatex'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'MYNTEYESSDKdoc'

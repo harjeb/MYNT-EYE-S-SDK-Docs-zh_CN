@@ -115,14 +115,13 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
-latex_engine = 'xelatex'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'MYNTEYESSDKdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
-
+latex_engine = 'xelatex'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
@@ -132,9 +131,12 @@ latex_elements = {
     #
     # 'pointsize': '10pt',
 
+    'fncychap' : '',
+
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+    'preamble': r'''\usepackage{ctex}
+    ''',
 
     # Latex figure (float) alignment
     #
